@@ -8,12 +8,15 @@
 <!--   📜 https://github.com/mdn/js-examples/tree/master/modules -->
 
 <body>
-  <div id="root"></div>
+  <!-- <div id="root"></div> -->
   <script type="module">
+    let root = document.createElement('div')
+    root.id = 'root'
+    console.log(root)
     let div = document.createElement('div')
     div.textContent = 'Hello World !'
-
-    let root = document.getElementById('root')
+    console.log(div)
+    // let root = document.getElementById('root')
 
     root.append(div)
   </script>
